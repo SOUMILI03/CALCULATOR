@@ -1,0 +1,81 @@
+body {
+    background-image: url(calci_bg.avif);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: grid;
+    height: 400px;
+    width: 350px;
+    background-color: lightblue;
+    border: 5px solid #3b373b;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Adds space between buttons */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #3b373b;
+}
+
+/* Input field styling */
+#name {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    text-align:right;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px; /* Adds space inside input */
+    margin-bottom: 15px; /* Adds space below input */
+    border: 3px solid #181717;
+    width: 95%;
+    
+}
+
+/* Button styling */
+button {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+#ac{grid-area:2/1;}
+#del{grid-area:2/2;}
+#brac{grid-area:2/3;}
+#percent{grid-area:2/4;}
+
+#seven{grid-area:3/1;}
+#eight{grid-area:3/2;}
+#nine{grid-area:3/3;}
+#divide{grid-area:3/4;}
+
+#four{grid-area:4/1;}
+#five{grid-area:4/2;}
+#six{grid-area:4/3;}
+#multiply{grid-area:4/4;}
+
+#one{grid-area:5/1;}
+#two{grid-area:5/2;}
+#three{grid-area:5/3;}
+#subtract{grid-area:5/4;}
+
+#zero{grid-area:6/1;}
+#point{grid-area:6/2;}
+#add{grid-area:6/3;}
+#equalto{grid-area:6/4;}
